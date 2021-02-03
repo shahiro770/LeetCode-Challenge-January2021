@@ -3,6 +3,7 @@
  * 
  * Just bit shift it to the right while tracking the right most bit
  * Or use Integer.countBits
+ * Time complexity is O(1)
  */
 
 public class HammingWeight {
