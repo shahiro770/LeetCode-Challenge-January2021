@@ -14,7 +14,7 @@
  * Effieicny is O(V + E) where V is the number of verts and E is the number of edges
  */
 
-class ShortestPathBinaryMatrix {
+class Solution {
     public int shortestPathBinaryMatrix(int[][] grid) {
         Deque<Integer> visited = new ArrayDeque<Integer>();
         

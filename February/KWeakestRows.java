@@ -9,7 +9,7 @@
  *      Binary search each row for the last 1 and first 0 to get the index at logn time over n time
 */
 
-class KWeakestRows {
+class Solution {
     public int[] kWeakestRows(int[][] mat, int k) {
         int m = mat.length;
         int n = mat[0].length;

@@ -6,7 +6,7 @@
  * Time complexity is O(1)
  */
 
-public class HammingWeight {
+public class Solution {
     // you need to treat n as an unsigned value
     public int hammingWeight(int n) {
         int count = 0;

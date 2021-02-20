@@ -16,7 +16,7 @@
  *      Final string assembly is also O(n) cause stringbuilder
  */
 
-class SimplifyPath {
+class Solution {
     public String simplifyPath(String path) {
         Deque<Character> stack = new ArrayDeque<Character>();
         char toAdd;

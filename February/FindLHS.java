@@ -10,7 +10,7 @@
  * O(n) for time and space
  */
 
-class FindLHS {
+class Solution {
     public int findLHS(int[] nums) {
         int bestCount = 0;
         

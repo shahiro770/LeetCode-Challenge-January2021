@@ -24,7 +24,7 @@
  *     }
  * }
  */
-class TrimBST {
+class Solution {
     public TreeNode trimBST(TreeNode root, int low, int high) {
         if (root == null) {
             return null;

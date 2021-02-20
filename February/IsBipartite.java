@@ -12,7 +12,7 @@
  *          I havne't learned enough math to prove this
 */
 
-class IsBipartite {
+class Solution {
     public boolean isBipartite(int[][] graph) {
         int[] nodes = new int[graph.length];
         
