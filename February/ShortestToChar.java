@@ -11,7 +11,7 @@
  * 
  */
 
-class ShortestToChar {
+class Solution {
     public int[] shortestToChar(String s, char c) {
         int[] answer = new int[s.length()];
         
