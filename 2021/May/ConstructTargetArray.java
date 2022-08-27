@@ -42,9 +42,6 @@ class Solution {
                 return false;
             }
             
-            // diff = sum - oldMax
-            // newNum = oldMax % diff
-            // newNum = oldMax % (sum - oldMax)
             int newNum = oldMax % sum;
             sum += newNum;
             if (sum != 1 && newNum <= 0) {  // idk what i did here it just worked

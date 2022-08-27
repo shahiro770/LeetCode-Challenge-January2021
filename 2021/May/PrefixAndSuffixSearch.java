@@ -11,7 +11,6 @@
  * 
  * Time Complexity O(n)
  * 
- *
 */
 
 class PrefixAndSuffixSearch {   // WordFilter is what it should be

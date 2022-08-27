@@ -12,6 +12,8 @@
  *      3) When sieving out a number's multiples, start at i * i
  *          All the numbers between i and i * i will have been removed from a past sieve
  *              e.g i * 2 is composite, i * 3 is composite, i * 4 is composite...
+ * 
+ * Time complexity: nlgn
  */
 
 class Solution {
