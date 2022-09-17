@@ -1,11 +1,12 @@
 /*
  * Reduce Array Size to The Half
  * 
+ * August 2022
  * Top 95% (29ms)
  *
  * Get the frequencies of each number then go greedy. 
  *
- * Time complexity: O(n
+ * Time complexity: O(n)
 */
 
 class Solution {

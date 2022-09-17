@@ -1,5 +1,5 @@
 /**
- * Stamping The Sequence
+ * Power of 4
  * 
  * August 2022
  * Top 100% (1ms)

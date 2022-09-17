@@ -1,3 +1,13 @@
+/*
+ * First Unique Character in a String
+ * 
+ * Top 96% (6ms)
+ *
+ * Just do a second pass.
+ *
+ * Time complexity: O(n)
+*/
+
 class Solution {
     public int firstUniqChar(String s) {
         int[] charCount = new int[26];

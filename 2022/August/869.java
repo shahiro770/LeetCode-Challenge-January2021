@@ -4,7 +4,7 @@
  * August 2022
  * Top 68% (2ms)
  * 
- * I copied the one from a leetcode post because it was much better written.
+ * 
  * The idea is simple:
  * 1) Count the frequency of digits for the number
  * 2) Count the frequency of digits for each power of 2
@@ -13,7 +13,6 @@
  * You can do a manual count and compare (Arrays.equals() is really fast) or leave it as a string
  * and do s1.equals(s2).
  */ 
-
 
 class Solution {
     public boolean reorderedPowerOf2(int n) {

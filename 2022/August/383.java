@@ -4,6 +4,7 @@
  * August 2022
  * Top 68% (6ms)
  * 
+ * Ran a 2ms solution that looked like mine and it got 6ms. I guess test cases changed.
  */ 
 
 class Solution {
