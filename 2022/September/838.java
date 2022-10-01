@@ -4,9 +4,9 @@
  * September 2022
  * Top 91% (18ms)
  * 
- * Time complexity: O(n)
- * 
  * Use a left and right pointer and cover all the cases. Its a mess of a question
+ * 
+ * Time complexity: O(n)
  * 
  * */
 

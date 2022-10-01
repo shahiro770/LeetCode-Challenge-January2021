@@ -5,6 +5,10 @@
  * Top 60% (124ms)
  *
  * Apparently simple DP but it took my mind way too long to understand.
+ * you want the maximum of starting from the left or right, but you need to build
+ * from the local maximum all the way on the interior to get the global max.
+ * This requires memo-izing the max pick with x left choices and y right choices
+ * since they will repeat states.
  * 
  * Time complexity: O(n^2), where n is the length of multpliers 
  */
@@ -24,6 +28,8 @@ class Solution {
         if (dp[multPos][left] != null) {
             return dp[multPos][left];
         }
+
+        // 
         int right = (nums.length - 1) - (multPos - left);
         int rightScore = nums[right] * multipliers[multPos];
         int rightFullScore = rightScore + maximumScore(dp, nums, multipliers, left, multPos + 1);

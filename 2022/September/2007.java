@@ -1,5 +1,5 @@
 /**
- * Pseudo-Palindromic Paths in a Binary Tree
+ * Find Original Array from Doubled Array
  * 
  * September 2022
  * Top 74% (99ms)
