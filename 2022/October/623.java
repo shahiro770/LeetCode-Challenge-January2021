@@ -2,7 +2,7 @@
  * Add One Row to Tree
  * 
  * October 2022
- * Top 88% (1ms)  
+ * Top 100% (0ms)  
  * 
  * DFS until you get to the desired row, then do some easy splicing.
  * 
