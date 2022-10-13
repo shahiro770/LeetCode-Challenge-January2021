@@ -10,7 +10,6 @@
  * Time complexity: O(n*m) as worst case the entire graph is traveresed twice
 */
 
-
 class Solution {
     public List<List<Integer>> pacificAtlantic(int[][] heights) {
         ArrayList<List<Integer>> sol = new ArrayList<List<Integer>>();

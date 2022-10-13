@@ -7,7 +7,6 @@
  * Time complexity: O(n) since hashsets use a hashmap as its underlying structure.
  * */
 
-
 class Solution {
     public boolean containsDuplicate(int[] nums) {
         HashSet<Integer> counts = new HashSet<Integer>();

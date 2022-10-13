@@ -3,6 +3,9 @@
  *
  * October 2022
  * Top 100% (1ms)  
+ *
+ * Get the prefixes and the postfixes at individual spots in the array.
+ * Ans[i] = prefix[i - 1] * postfix[i + 1]
  * 
  * Time complexity: O(n) 
  * */
