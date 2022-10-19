@@ -1,5 +1,5 @@
 /**
- * Minimum Window Substring
+ * Sliding Window Maximum
  * 
  * Top 90% (34ms)
  * 
