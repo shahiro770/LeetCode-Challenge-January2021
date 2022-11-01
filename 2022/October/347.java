@@ -1,45 +1,37 @@
 /**
- * Top K Frequent Elements 
- *
- * October 2022
- * Top 98% (5ms)  
+ * Top K Frequent Words
  * 
- * Time complexity: O(nlgn) to maintain heap property
+ * Top 99% (5ms)
+ * 
+ * Put it in a map, and then put the map in a priority queue/max heap
+ * 
+ * Time Complexity: O(nlogk), where k is the number elements that are needed in the solution.
+ * n elements are put into the hash map, and then again into pq, but then we will remove k elements,
+ * which will take logk time. 
  * */
 
 class Solution {
-    public int[] topKFrequent(int[] nums, int k) {
-        HashMap<Integer, Integer> counts = new HashMap<Integer, Integer>();
-
-        for (int i = 0; i < nums.length; i++) {
-            counts.put(nums[i], counts.getOrDefault(nums[i], 0) + 1);
-        }
-        PriorityQueue<Node> pq = new PriorityQueue<Node>(new NodeComparator());
-
-        for (Map.Entry<Integer, Integer> e : counts.entrySet()) {
-            pq.add(new Node(e.getKey(), e.getValue()));   
+    public List<String> topKFrequent(String[] words, int k) {
+        HashMap<String, Integer> map = new HashMap<String, Integer>();
+        for (int i = 0; i < words.length; i++) {
+            map.put(words[i], map.getOrDefault(words[i], 0) + 1);
         }
 
-        int[] sol = new int[k];
-        for (int i = 0; i < sol.length; i++) {
-            sol[i] = pq.poll().val;
-        }
-        return sol;
-    }
+        PriorityQueue<Pair<String, Integer>> pq = new PriorityQueue<Pair<String, Integer>>((a, b) -> {
+            if (a.getValue() == b.getValue()) {
+                return a.getKey().compareTo(b.getKey());
+            }
+            return b.getValue() - a.getValue();
+        });
+        List<String> sol = new ArrayList<String>();
 
-    private class Node  {
-        int val;
-        int count;
-
-        private Node(int val, int count) {
-            this.val = val;
-            this.count = count;
+        for (Map.Entry e : map.entrySet()) {
+            pq.offer(new Pair(e.getKey(), e.getValue()));
         }
-    }
-
-    private class NodeComparator implements Comparator<Node> {
-        public int compare(Node a, Node b) {
-            return b.count - a.count;
+        for (int i = 0; i < k; i++) {
+            sol.add(pq.poll().getKey());
         }
+
+        return sol; 
     }
 }
