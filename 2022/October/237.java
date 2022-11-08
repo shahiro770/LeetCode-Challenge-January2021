@@ -3,6 +3,7 @@
  * 
  * Top 100% (0ms)
  * 
+ * Took a break because grandma died.
  * Shift all the nodes over by 1, making the last node null (so we have to stop at the 2nd last node)
  * Note that the constraint of never being given the tail node is why the code is so short.
  * 

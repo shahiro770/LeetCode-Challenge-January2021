@@ -3,7 +3,7 @@
  * 
  * Top 93% (3ms)
  * 
- * Weirdo question
+ * Weirdo question, just count letters.
  * 
  * Time Complexity: O(nk)
  * */
