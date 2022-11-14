@@ -3,7 +3,7 @@
  *
  * Top 37% (572ms) 
  * 
- * Tries + DFS. Not my best but leetcode hard is hard
+ * Tries + DFS. Not my best but leetcode hard is hard.
  * 
  * Time Complexity: O(n * n * m) I think? idk about this one
  */
