@@ -29,6 +29,7 @@ class Solution {
 
         int[] a;
         int[] b;
+        // for convenience, make it so the first array is always the larger one
         if (nums1.length > nums2.length) {
             a = nums2;
             b = nums1;
@@ -54,10 +55,18 @@ class Solution {
         // System.out.println("Starting: " + l + " " + r);
         while (true) {
             int midA = (l + r) / 2;
-            if (l > r) {
+            // if the left passes the right, that implies we don't need to use
+            // ANY value in the smaller array; setting the midpoint to -1 will
+            // force us to take all elements from the larger
+            if (l > r) {    
                 midA = -1;
             }
             int midB = half - midA - 2;
+            /*
+             * This logic is done to make handling edgecases easier,
+             * mainly if we go past the boundaries of either array, we can jsut treat them
+             * as taking extremely large or small numbers depending on the case 
+             */
             int aLeft = midA >= 0 ? a[midA] : Integer.MIN_VALUE;
             int aRight = midA + 1 < a.length ? a[midA + 1] : Integer.MAX_VALUE;
             
@@ -86,12 +95,3 @@ class Solution {
         }
     }
 }
-
-/*
-nums1 = [4,4,12]
-
-nums2 = [3,7,21]
-
-[3,4,4,7,12,21]
-median = 5.5
-*/
