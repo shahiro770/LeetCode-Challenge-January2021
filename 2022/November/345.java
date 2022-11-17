@@ -1,7 +1,11 @@
 /*
  * Reverse Vowels of a String
  *
+ * Top 98% (3ms)
  * 
+ * This one is for mehdi's future girlfriend.
+ * 
+ * Time Complexity: O(n) where n is the length of the string 
  */
 
 class Solution {
