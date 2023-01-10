@@ -6,7 +6,7 @@
  * Build the adjacency list, and then do a 2-colouring with BFS to determine if you can make a bipartition.
  * 
  * Time Complexity: O(V + E)
- * /
+ */
 
 class Solution {
     public boolean possibleBipartition(int n, int[][] dislikes) {
