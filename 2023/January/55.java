@@ -10,7 +10,6 @@
  * Time Complexity: O(n)
  * */
 
-
 class Solution {
     public boolean canJump(int[] nums) {
         int max = nums[0];
