@@ -6,7 +6,7 @@
  * Surprisingly tricky leetcode easy. You need to check the mapping exists both ways, otherwise cases such try and re-use
  * a mapping with a different letter will end you.
  * 
- * Time Complexity: O(n^2)
+ * Time Complexity: O(n * m) for string comparisons
  */
 
 class Solution {
