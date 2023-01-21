@@ -1,7 +1,7 @@
 /*
  * Minimum Rounds to Complete All Tasks
  * 
- * Top 90% (1ms)
+ * Top 89% (33ms)
  * 
  * Greed works for this problem since you always want to try and take out as many 3s before taking out any 2s.
  * Really, the only time you want to take out a 2 is if the remainder leaves you with:
