@@ -42,8 +42,7 @@
  *           And of course, if we do see a remainder 0, that says the subArray from index 0 to i is also valid
  *              This gives us 4 more 
  *          The final count in this case is 11
- *          
- * 
+ *
  * Time Complexity: O(n)
  */
 
