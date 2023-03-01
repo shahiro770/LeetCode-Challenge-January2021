@@ -17,12 +17,12 @@ class Solution {
             final int len = word.length();
             final boolean[] dp = new boolean[len+1];
             dp[0] = true;
-            for(int i = 1; i <= len; i++){
+            for(int i = 1; i <= len; i++) {
                 for(int j = (i == len ? 1 : 0); !dp[i] && j < i; j++){
                     dp[i] = dp[j] && dictonary.contains(word.substring(j,i));
                 }
             }
-            if(dp[len]){
+            if (dp[len]) {
                 answer.add(word);
             }
         }
