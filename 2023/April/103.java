@@ -3,7 +3,7 @@
  * 
  * Top 77% (1ms)
  * 
- * Keep track of the directino you need to be adding nodes to the next layer of your "read queue".
+ * Keep track of the direction you need to be adding nodes to the next layer of your "read queue".
  * 
  * Time Complexity: O(n)
  */
