@@ -45,7 +45,6 @@ class Solution {
         int randomVal = -1; // this will get overriden on the first check as resevoir size starts at 1
         ListNode curr = head;
         while (curr != null) {
-            
             if (Math.random() < 1.0 / resevoirSize) {
                 randomVal = curr.val;
             }
