@@ -1,7 +1,7 @@
 /*
  * Recyclable and Low Fat Products
  *
- * Top 87% (619ms)
+ * Top 83% (924ms)
  * 
  * Well I didn't know leetcode had sql questions
  */
