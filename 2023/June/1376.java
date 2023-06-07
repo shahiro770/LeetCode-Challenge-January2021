@@ -1,21 +1,19 @@
 /*
  * Detonate the Maximum Bombs
  * 
- * Top 37% (159 ms) (its slow cause im too lazy to not flood the call stack)
+ * Top 45% (106 ms) (probably can do this without creating treenode classes)
  * 
- * The tricky part here is figuring out if a bomb can detonate another bomb.
- * To do this, use the distance between two points formula for bombs b1 and b2
- * (with b1 detonating)
- *      1) ((x2 - x1)^2 + (y2 - y1)^2)^(1/2) = d
- *      2) (x2 - x1)^2 + (y2 - y1)^2 = d^2
- *      Now in our case, as long as the distance is less than that explosion radius,
- *      we can consider b2 in the radius of b1. So our formula becomes
- *      3) (x2 - x1)^2 + (y2 - y1)^2 <= r1^2
+ * The catch for this bfs/dfs is that informing can be done in parallel. For example
+ * 1) Boss tells employees 1 and 2 in 1 minute the news
+ * 2) Employees 1 and 2 take 2 and 3 minutes respectively to tell their subordinates
+ * 3) It takes 1 minute to tell 1,2, but the bottleneck for the second round is employee 2 
+ * taking 3 minutes to tell his subordinates
+ * 4) The total time for this interaction is 4 minutes as employee 1 will be done while 2 finishes
  * 
- * With this, we can construct a graph (b1 and b2 share an edge if b2 is in the radius
- * of b1). From here its your choice of dfs or bfs to find the largest connected component.
+ * To account for this, simply add the superior's inform time to the subordinate's informTime.
+ * The answer will update to always be the maximum inform time seen.
  * 
- * Time Complexity: O(n + n^2) if every bomb can reach every other bomb
+ * Time Complexity: O(n) 
  */
 
 class Solution {
