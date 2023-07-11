@@ -1,3 +1,14 @@
+/**
+ * Minimum Size Subarray Sum
+ *
+ * Top 99% (1ms)
+ * 
+ * Somewhat straightforward sliding window. Expand the window until we have the sum, then move up the rear,
+ * recording the smallest valid window we've seen throughout the process.
+ * 
+ * Time Complexity: O(n)
+ * */
+
 class Solution {
     public int minSubArrayLen(int target, int[] nums) {
         int left = 0;
